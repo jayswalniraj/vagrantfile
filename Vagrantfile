@@ -4,7 +4,7 @@ Vagrant.configure("2") do |config|
   #config.ssh.username = "vagrant" # Default Username
   #config.ssh.password = "vagrant" # Default Password
   config.disksize.size = "10GB"
-  config.vm.synced_folder "/srv", "/srv"
+  #config.vm.synced_folder "/srv", "/srv"
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--memory", "1024"]
     vb.customize ["modifyvm", :id, "--cpus", "1"]
